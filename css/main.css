@@ -1,0 +1,156 @@
+/*========================================
+	Basic styling
+  ========================================*/
+
+/*Basckground coulors and basic alignment*/
+html{
+	display: block;
+	width: 100%;
+	min-height: 98%;
+	background: beige;
+}
+
+main, header, footer{
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	background: rgba(255, 255, 255, 0.5); /*with some transparency*/
+	
+	-moz-border-radius: 0.2em 0.2em;
+	border-radius: 0.2em 0.2em; /*Rounded corners*/
+	
+	box-shadow: 0 0 2px rgba(128, 128, 128, 0.8); /*shadow for outline*/
+}
+
+/*Center the main heading.*/
+body > header h1, header{
+	text-align: center;
+}
+
+/*Position footer and define the style of the text.*/
+body > footer{
+	font-style: italic;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	opacity: 0.5;
+	
+	width: 100%;
+}
+
+main{
+	min-height: 70%;
+}
+
+
+
+/*========================================
+	Fonts
+  ========================================*/
+
+@font-face {
+  font-family: "Almendra";
+  src: local("Almendra"),
+       local("AlmendraDisplay"),
+	   local("Almendra Display"),
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot?#iefix") format("embedded-opentype"),
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay.woff") format("woff"),*/
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay.ttf") format("truetype");
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.svg#AlmendraDisplay") format("svg");
+  src: url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot");*/
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*========================================
+	Header
+  ========================================*/
+
+body > header{
+	font-family: "Almendra", sans-serif;
+}
+
+
+
+/*========================================
+	Navigation
+  ========================================*/
+
+/*Using flex*/
+body > header nav ul{
+	margin: 0 auto;
+	padding: 0;
+	width: 88.5%;
+	
+	-webkit-display: -webkit-box;
+	-webkit-display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+body > header nav li{
+	list-style: none; /*Disable built-in lists styling.*/
+	
+	padding: 0.5em;
+	flex: auto;
+}
+
+
+
+/*========================================
+	Links styling
+  ========================================*/
+
+a, a:active, a:visited, a:active, a:focus, a:hover{
+	outline: 0;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover, a:active{
+	text-decoration: underline;
+	transition: 1s linear;
+}
+
+
+
+/*========================================
+	Beatiful animations, special effects
+  ========================================*/
+
+/*Basic transition for any change.*/
+*{
+	-webkit-transition: 2s linear;
+	-moz-transition: 2s linear;
+	-ms-transition: 2s linear;
+	-o-transition: 2s linear;
+	transition: 2s linear;
+}
+
+
+
+/*========================================
+	Media queries
+  ========================================*/
+
+@media screen and (max-width: 430px){
+	body > header nav li{
+	  -webkit-flex-direction: column;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+	  flex-direction: column;
+	}
+	li{
+	  text-align: center;
+	}
+}
