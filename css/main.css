@@ -53,14 +53,15 @@ main{
   src: local("Almendra"),
        local("AlmendraDisplay"),
 	   local("Almendra Display"),
-       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot?#iefix") format("embedded-opentype"),
-       url("/css/Fonts/Almendra_Display/AlmendraDisplay.woff") format("woff"),*/
-       url("/css/Fonts/Almendra_Display/AlmendraDisplay.ttf") format("truetype");
-       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.svg#AlmendraDisplay") format("svg");
-  src: url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot");*/
+	   local("AlmendraDisplay-Regular"),
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype");
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
+  src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 
@@ -71,6 +72,21 @@ main{
 
 body > header{
 	font-family: "Almendra", sans-serif;
+}
+
+body > header h1{
+	font-size: 3em;
+}
+
+
+
+
+/*========================================
+	Header
+  ========================================*/
+
+body > footer{
+	font-family: sans-serif;
 }
 
 
@@ -85,6 +101,8 @@ body > header nav ul{
 	padding: 0;
 	width: 88.5%;
 	
+	font-size: 2em;
+
 	-webkit-display: -webkit-box;
 	-webkit-display: -webkit-flex;
 	display: -webkit-box;
