@@ -45,6 +45,37 @@ main{
 
 
 /*========================================
+	Fonts
+  ========================================*/
+
+@font-face {
+  font-family: "Almendra";
+  src: local("Almendra"),
+       local("AlmendraDisplay"),
+	   local("Almendra Display"),
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot?#iefix") format("embedded-opentype"),
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay.woff") format("woff"),*/
+       url("/css/Fonts/Almendra_Display/AlmendraDisplay.ttf") format("truetype");
+       /*url("/css/Fonts/Almendra_Display/AlmendraDisplay.svg#AlmendraDisplay") format("svg");
+  src: url("/css/Fonts/Almendra_Display/AlmendraDisplay.eot");*/
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/*========================================
+	Header
+  ========================================*/
+
+body > header{
+	font-family: "Almendra", sans-serif;
+}
+
+
+
+/*========================================
 	Navigation
   ========================================*/
 
