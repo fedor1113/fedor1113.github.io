@@ -60,8 +60,8 @@ main{
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
   src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
-  font-weight: 400;
-  font-style: normal;
+  font-weight: normal;
+  font-style: italic;
 }
 
 
@@ -72,6 +72,21 @@ main{
 
 body > header{
 	font-family: "Almendra", sans-serif;
+}
+
+body > header h1{
+	font-size: 3em;
+}
+
+
+
+
+/*========================================
+	Header
+  ========================================*/
+
+body > footer{
+	font-family: sans-serif;
 }
 
 
@@ -86,6 +101,8 @@ body > header nav ul{
 	padding: 0;
 	width: 88.5%;
 	
+	font-size: 2em;
+
 	-webkit-display: -webkit-box;
 	-webkit-display: -webkit-flex;
 	display: -webkit-box;
