@@ -160,7 +160,7 @@ a:hover, a:active{
 	Media queries
   ========================================*/
 
-@media screen and (max-width: 630px){
+@media screen and (max-width: 580px){
 	body > header nav ul{
 	  -webkit-flex-direction: column;
 	  -webkit-box-orient: vertical;
