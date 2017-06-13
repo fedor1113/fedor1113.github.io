@@ -65,7 +65,11 @@ body{
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
        url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
        url("Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
-       url("Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype");
+       url("Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype"),
+	   url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
+       url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype"),
+	   url("https://fedor1113.github.io/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
+       url("https://fedor1113.github.io/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype");
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
   src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
@@ -82,7 +86,11 @@ body{
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
        url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
        url("Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
-       url("Fonts/GidoleFont/Gidole-Regular.otf") format("opentype");
+       url("Fonts/GidoleFont/Gidole-Regular.otf") format("opentype"),
+	   url("css/Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
+       url("css/Fonts/GidoleFont/Gidole-Regular.otf") format("opentype"),
+	   url("https://fedor1113.github.io/css/Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
+       url("https://fedor1113.github.io/cssFonts/GidoleFont/Gidole-Regular.otf") format("opentype");
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
   src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
@@ -92,11 +100,21 @@ body{
 
 @font-face{
     font-family: 'Rothenburg-Decorative';
-    src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot');
-    src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot')
+		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot');
+    src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
          url('Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
          url('Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
-         url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
+         url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
+         url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
+         url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg'),
+		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
+         url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
+         url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -104,7 +122,9 @@ body{
 
 @font-face{
     font-family: "Snippet";
-    src: url('Fonts/Snippet/Snippet.otf') format('opentype');
+    src: url('Fonts/Snippet/Snippet.otf') format('opentype'),
+		 url('css/Fonts/Snippet/Snippet.otf') format('opentype'),
+		 url('https://fedor1113.github.io/css/Fonts/Snippet/Snippet.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
