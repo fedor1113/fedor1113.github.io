@@ -64,8 +64,8 @@ body{
 	   local("AlmendraDisplay-Regular"),
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
        url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
-       url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
-       url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype");
+       url("Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
+       url("Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype");
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
   src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
@@ -81,8 +81,8 @@ body{
 	   local("Gidole-Regular"),
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
        url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
-       url("/css/Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
-       url("/css/Fonts/GidoleFont/Gidole-Regular.otf") format("opentype");
+       url("Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
+       url("Fonts/GidoleFont/Gidole-Regular.otf") format("opentype");
        /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
   src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
@@ -95,8 +95,8 @@ body{
     src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot');
     src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
          url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
-         url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
-         url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
+         url('Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
+         url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
