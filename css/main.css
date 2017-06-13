@@ -195,6 +195,7 @@ body > header nav li{
 
 main{
     padding: 1.2em;
+	padding-bottom: 2.5em;
     box-sizing: border-box;
 }
 
