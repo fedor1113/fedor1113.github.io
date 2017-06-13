@@ -94,7 +94,7 @@ body{
     font-family: 'Rothenburg-Decorative';
     src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot');
     src: url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
+         url('Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
          url('Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
          url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
     font-weight: normal;
@@ -104,7 +104,7 @@ body{
 
 @font-face{
     font-family: "Snippet";
-    src: url('/css/Fonts/Snippet/Snippet.otf') format('opentype');
+    src: url('Fonts/Snippet/Snippet.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
