@@ -209,8 +209,14 @@ main h, main h1, main h2, main h3, main h4, main h5, main h6, main{
 main p::first-letter{
     font-family: "Rothenburg-Decorative", cursive;
 
+	height: 3em;
+	width: 100%;
+	display: block;
+	position: relative;
     float: left;
     font-size: 3em;
+	margin-top: 0.1em;
+	margin-bottom: -0.01em;
 }
 
 main p::first-line{
