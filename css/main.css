@@ -33,7 +33,6 @@ body > footer{
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	opacity: 0.5;
 
 	width: 100%;
 }
@@ -152,6 +151,12 @@ body > header h1{
 
 body > footer{
 	font-family: sans-serif;
+	opacity: 0.8;
+}
+
+.footer_badge{
+	height: 15px;
+	opacity: 1;
 }
 
 
@@ -302,6 +307,10 @@ main a{
 	main{
 		padding: 0.5em;
 	}
+
+	.footer_badge{
+		height: 17px;
+	}
 }
 
 @media (max-width: 480px){
@@ -315,5 +324,9 @@ main a{
 
 	main{
 		padding: 0.2em;
+	}
+
+	.footer_badge{
+		height: 19px;
 	}
 }
