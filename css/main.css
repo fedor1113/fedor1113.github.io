@@ -15,10 +15,10 @@ main, header, footer{
 	margin: 0 auto;
 	width: 90%;
 	background: rgba(255, 255, 255, 0.5); /*with some transparency*/
-	
+
 	-moz-border-radius: 0.2em 0.2em;
 	border-radius: 0.2em 0.2em; /*Rounded corners*/
-	
+
 	box-shadow: 0 0 2px rgba(128, 128, 128, 0.8); /*shadow for outline*/
 }
 
@@ -34,7 +34,7 @@ body > footer{
 	bottom: 0;
 	left: 0;
 	opacity: 0.5;
-	
+
 	width: 100%;
 }
 
@@ -165,7 +165,7 @@ body > header nav ul{
 	margin: 0 auto;
 	padding: 0;
 	width: 88.5%;
-	
+
 	font-size: 2em;
 
 	-webkit-display: -webkit-box;
@@ -173,7 +173,7 @@ body > header nav ul{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	
+
 	-webkit-justify-content: space-between;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
@@ -182,7 +182,7 @@ body > header nav ul{
 
 body > header nav li{
 	list-style: none; /*Disable built-in lists styling.*/
-	
+
 	padding: 0.5em;
 	flex: auto;
 }
@@ -277,7 +277,7 @@ main a{
 	Media queries
   ========================================*/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
 	body > header nav ul{
 	  -webkit-flex-direction: column;
 	  -webkit-box-orient: vertical;
@@ -295,3 +295,5 @@ main a{
         width: 95%;
     }
 }
+
+/* HiDPI */
