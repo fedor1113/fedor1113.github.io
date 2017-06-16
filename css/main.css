@@ -293,6 +293,10 @@ main a{
 	html{
 		font-size: 14px;
 	}
+
+	main{
+		padding: 0.5em;
+	}
 }
 
 @media (max-width: 480px){
@@ -302,6 +306,10 @@ main a{
 
 	html{
 		font-size: 16px;
+	}
+
+	main{
+		padding: 0.2em;
 	}
 }
 
