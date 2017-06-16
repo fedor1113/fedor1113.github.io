@@ -226,7 +226,7 @@ main p::first-line{
 main p{
 	display: inline-block;
 	margin: 2em;
-	padding: 0.5em;
+	padding: 0.05em;
 }
 
 
@@ -295,11 +295,7 @@ main a{
 	}
 
 	main{
-		padding: 0.2em;
-	}
-
-	main p{
-		padding: 0.1em;
+		padding: 0.5em;
 	}
 }
 
@@ -312,8 +308,8 @@ main a{
 		font-size: 16px;
 	}
 
-	main, main p{
-		padding: 0.01em;
+	main{
+		padding: 0.2em;
 	}
 }
 
