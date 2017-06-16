@@ -278,7 +278,7 @@ main a{
 	Media queries
   ========================================*/
 
-@media screen and (max-width: 720px){
+@media (max-width: 720px){
 	header nav ul{
 	  -webkit-flex-direction: column;
 	  -webkit-box-orient: vertical;
@@ -291,13 +291,13 @@ main a{
 	}
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     main, header, footer{
         width: 95%;
     }
 
 	html{
-		font-size: 14pt;
+		font-size: 14px;
 	}
 }
 
