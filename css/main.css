@@ -161,7 +161,7 @@ body > footer{
   ========================================*/
 
 /*Using flex*/
-body > header nav ul{
+header nav ul{
 	margin: 0 auto;
 	padding: 0;
 	width: 88.5%;
@@ -180,7 +180,7 @@ body > header nav ul{
 	justify-content: space-between;
 }
 
-body > header nav li{
+header nav li{
 	list-style: none; /*Disable built-in lists styling.*/
 
 	padding: 0.5em;
@@ -212,7 +212,7 @@ main p::first-letter{
 	height: 3em;
 	width: 100%;
 	display: block;
-	position: relative;
+	/*position: relative;*/
     float: left;
     font-size: 3em;
 	margin-top: 0.01em;
@@ -224,6 +224,7 @@ main p::first-line{
 }
 
 main p{
+	display: inline-block;
 	margin: 2em;
 	padding: 0.5em;
 }
@@ -278,7 +279,7 @@ main a{
   ========================================*/
 
 @media screen and (max-width: 720px){
-	body > header nav ul{
+	header nav ul{
 	  -webkit-flex-direction: column;
 	  -webkit-box-orient: vertical;
 	  -webkit-box-direction: normal;
