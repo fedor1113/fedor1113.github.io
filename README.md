@@ -11,4 +11,4 @@ As there might be some software templates or discussions about programming on th
 there are 3 major licenses that will be used if not otherwise noted: for all non-software
 content - CC0 1.0 Universal, for software (programs and code) - MIT license
 and for less than 20 lines of code - Fair license. All of the licenses are permissive and
-fairly basic - they allow distribution, commertial use etc. (read LICENSE file for more info).
+fairly basic - they allow distribution, commercial use etc. (read LICENSE file for more info).
