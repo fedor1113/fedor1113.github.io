@@ -8,6 +8,7 @@ html{
 	width: 100%;
 	min-height: 98%;
 	background: beige;
+	text-align: justify;
 }
 
 main, header, footer{
@@ -238,6 +239,15 @@ main p{
 	margin-left: 1.2em;
 
 	padding: 0.05em;
+}
+
+/*List styling*/
+main li{
+	text-align: justify;
+}
+
+main ul{
+	list-style: circle;
 }
 
 
