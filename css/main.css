@@ -341,3 +341,9 @@ main a{
 		height: 19px;
 	}
 }
+
+@media (max-width: 320px) {
+	main{
+		padding: 1.4em;
+	}
+}
