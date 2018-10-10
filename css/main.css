@@ -323,6 +323,11 @@ main a{
 	.footer_badge{
 		height: 1em;
 	}
+
+	footer{
+		max-height: 30%;
+		overflow: scroll;
+	}
 }
 
 @media screen and (max-width: 30em){
@@ -339,7 +344,7 @@ main a{
 	}
 }
 
-@media screen and (max-width: 22em){
+@media screen and (max-width: 24em){
 	main{
 		padding-bottom: 2em;
 	}
