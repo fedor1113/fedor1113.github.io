@@ -152,7 +152,7 @@ body > header h1{
 
 body > footer{
 	font-family: sans-serif;
-	opacity: 0.8;
+	opacity: 0.96;
 }
 
 .footer_badge{
@@ -338,13 +338,19 @@ main a{
   	}
   }
 
-  @media (max-width: 20em){
+  @media (max-width: 22em){
   	main{
-  		padding-bottom: 1.4em;
+  		padding-bottom: 2em;
   	}
   }
 
-  @media (max-width: 15em){
+  @media (max-width: 18em){
+  	main{
+  		margin-bottom: 3.5em;
+  	}
+  }
+
+  @media (max-width: 16em){
   	main{
   		margin-bottom: 4em;
   	}
