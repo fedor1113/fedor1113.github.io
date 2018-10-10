@@ -143,6 +143,10 @@ body > header h1{
 	font-size: 3em;
 }
 
+/* body > header h1::first-letter{
+	color: sienna;
+} */
+
 
 
 
@@ -209,21 +213,30 @@ main{
 /*Headings*/
 main h, main h1, main h2, main h3, main h4, main h5, main h6, main{
     font-family: "Snippet", "Gidole";
-
+	clear: both;
 }
 
 /*-- Initials are enchanting. --*/
 main p:first-of-type::first-letter{
     font-family: "Rothenburg-Decorative", cursive;
+	/* color: sienna; */
 
-	height: 3em;
-	width: 100%;
-	display: block;
-	/*position: relative;*/
-    float: left;
+	float: left; /* Not quite standard but very useful */
+	/* padding: 0 .03em;
+	margin: 0 .03em 0 0; */
+	/* margin-top: -0.2em; */
+	/* padding-bottom: 0.1em;
+	padding-right: : 0.02em; */
     font-size: 3em;
-	margin-top: 0.01em;
-	margin-bottom: -0.01em;
+	line-height: 100%; /* Should coincide with the first line's! */
+}
+
+/* A very dirty hack to make the first letter be situated higher in Firefox */
+/* Sorry, Firefox */
+@-moz-document url-prefix() {
+	main p:first-of-type::first-letter{
+		margin-top: -0.25em;
+	}
 }
 
 main p:first-of-type::first-line{
@@ -231,14 +244,16 @@ main p:first-of-type::first-line{
 }
 
 main p{
-	display: inline-block;
+	/* display: inline-block; */
+	display: block;
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
 
 	margin-right: 0.5em;
 	margin-left: 1.2em;
 
 	padding: 0.05em;
+	clear: both;
 }
 
 /*List styling*/
@@ -298,10 +313,6 @@ main a{
 /*========================================
 	Media queries
   ========================================*/
-
-@-ms-viewport{
-	width: device-width;
-}
 
 @media screen and (max-width: 45em){
 	header nav ul{
