@@ -299,6 +299,10 @@ main a{
 	Media queries
   ========================================*/
 
+@-ms-viewport{
+	width: device-width;
+}
+
 @media screen and (max-width: 45em){
 	header nav ul{
 		-webkit-flex-direction: column;
