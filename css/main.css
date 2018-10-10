@@ -354,6 +354,10 @@ main a{
   	main{
   		margin-bottom: 4em;
   	}
+
+	body{
+  		font-size: 0.9em;
+  	}
   }
 
   @media (max-width: 10em){
