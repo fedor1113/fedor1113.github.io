@@ -48,9 +48,9 @@ main{
 	Fonts
   ========================================*/
 
-/* html{
-    font-size: 12px;
-} */
+html{
+    font-size: 1em;
+}
 
 body{
     font-size: 1.2em;
