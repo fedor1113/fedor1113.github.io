@@ -48,9 +48,9 @@ main{
 	Fonts
   ========================================*/
 
-html{
+/* html{
     font-size: 12px;
-}
+} */
 
 body{
     font-size: 1.2em;
@@ -156,7 +156,7 @@ body > footer{
 }
 
 .footer_badge{
-	height: 15px;
+	height: 1em;
 	opacity: 1;
 }
 
@@ -312,7 +312,8 @@ main a{
 	}
 
 	html{
-		font-size: 14px;
+		/* font-size: 14px; */
+		font-size: 0.98em;
 	}
 
 	main{
@@ -329,9 +330,9 @@ main a{
         width: 95%;
     }
 
-	html{
+	/* html{
 		font-size: 16px;
-	}
+	} */
 
 	main{
 		padding: 0.2em;
