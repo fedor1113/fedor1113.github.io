@@ -363,11 +363,19 @@ main a{
 	main{
 		padding-bottom: 2em;
 	}
+
+	body > header > h1{
+		font-size: 2.4em;
+	}
 }
 
 @media screen and (max-width: 18em){
 	main{
 		margin-bottom: 3.5em;
+	}
+
+	body > header > h1{
+		font-size: 2.2em;
 	}
 }
 
@@ -378,6 +386,18 @@ main a{
 
 	body{
 		font-size: 0.92em;
+	}
+
+	body > header > h1{
+		font-size: 1.7em;
+	}
+
+	h1{
+		font-size: 1.5em;
+	}
+
+	h2{
+		font-size: 1.4em;
 	}
 }
 
@@ -396,5 +416,9 @@ main a{
 
 	.footer_badge{
 		height: 0.789em;
+	}
+
+	body > header > h1{
+		font-size: 1.4em;
 	}
 }
