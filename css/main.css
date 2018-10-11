@@ -357,6 +357,10 @@ main a{
 	.footer_badge{
 		height: 1em;
 	}
+
+	body > header > h1{
+		font-size: 3em;
+	}
 }
 
 @media screen and (max-width: 24em){
@@ -365,7 +369,7 @@ main a{
 	}
 
 	body > header > h1{
-		font-size: 2.4em;
+		font-size: 2.5em;
 	}
 }
 
