@@ -21,6 +21,8 @@ main, header, footer{
 	border-radius: 0.2em 0.2em; /*Rounded corners*/
 
 	box-shadow: 0 0 2px rgba(128, 128, 128, 0.8); /*shadow for outline*/
+	clear: both;
+	clear: all;
 }
 
 /*Center the main heading.*/
@@ -208,12 +210,17 @@ main{
 	padding-bottom: 2.8em;
 	margin-bottom: 2.5em;
     box-sizing: border-box;
+	position: relative;
 }
 
 /*Headings*/
 main h, main h1, main h2, main h3, main h4, main h5, main h6, main{
     font-family: "Snippet", "Gidole";
 	clear: both;
+}
+
+figcaption{
+	text-align: center;
 }
 
 /*-- Initials are enchanting. --*/
@@ -233,9 +240,10 @@ main p:first-of-type::first-letter{
 
 /* A very dirty hack to make the first letter be situated higher in Firefox */
 /* Sorry, Firefox */
-@-moz-document url-prefix() {
+@-moz-document url-prefix(){
 	main p:first-of-type::first-letter{
-		margin-top: -0.25em;
+		margin-top: -0.35em;
+		margin-bottom: -0.2em;
 	}
 }
 
@@ -279,6 +287,41 @@ blockquote::after, q::after{
 	content: close-quote;
 }
 
+main section blockquote::before, main section blockquote::after{
+	font-family: 'Rothenburg-Decorative';
+	font-size: 4em;
+}
+
+main section blockquote::before{
+	/* margin-top: 0.1em;
+	margin-left: 0.3em; */
+	float: left;
+	line-height: 1em;
+}
+
+main section blockquote::after{
+	/* margin-bottom: 0.1em; */
+	/* margin-right: 0.1em; */
+	/* float: right; */
+	float: right;
+	line-height: 0em;
+}
+
+main section blockquote, main section blockquote p,
+main section blockquote p::first-letter{
+	clear: none;
+	float: none;
+}
+section footer{
+	clear: none;
+}
+
+main p:not(:first-of-type):hover::before{
+	content: "¶";
+	position: absolute;
+	left: 1em;
+}
+
 
 
 /*========================================
@@ -292,6 +335,52 @@ blockquote::after, q::after{
 .epigraph{
 	text-align: right;
 	display: block;
+}
+
+.no_before::before{
+	display: none;
+}
+
+.two_columns{
+	-webkit-columns: 2 8em;
+	-moz-columns: 2 8em;
+	columns: 2 8em;
+
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	column-gap: 2em;
+
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
+}
+
+.three_columns{
+	-webkit-columns: 3 8em;
+	-moz-columns: 3 8em;
+	columns: 3 8em;
+
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	column-gap: 2em;
+
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
+}
+
+.four_columns{
+	-webkit-columns: 4 6em;
+	-moz-columns: 4 6em;
+	columns: 4 6em;
+
+	-webkit-column-gap: 2em;
+	-moz-column-gap: 2em;
+	column-gap: 2em;
+
+  -webkit-column-rule: 1px dotted #ddd;
+     -moz-column-rule: 1px dotted #ddd;
+          column-rule: 1px dotted #ddd;
 }
 
 
@@ -388,7 +477,7 @@ main a{
 		height: 1em;
 	}
 
-	footer{
+	body > footer{
 		max-height: 30%;
 		overflow: scroll;
 	}
@@ -463,7 +552,7 @@ main a{
 		margin-bottom: 3.8em;
 	}
 
-	footer{
+	body > footer{
 		font-size: 0.8em;
 	}
 
