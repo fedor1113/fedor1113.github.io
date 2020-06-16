@@ -12,6 +12,7 @@ html{
 }
 
 main, header, footer{
+	position: relative;
 	display: block;
 	margin: 0 auto;
 	width: 90%;
@@ -220,6 +221,13 @@ main h, main h1, main h2, main h3, main h4, main h5, main h6, main{
 }
 
 figcaption{
+	text-align: center;
+	font-style: italic;
+}
+
+main article figure img, figure{
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 }
 
