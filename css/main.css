@@ -23,7 +23,7 @@ main, header, footer{
 
 	box-shadow: 0 0 2px rgba(128, 128, 128, 0.8); /*shadow for outline*/
 	clear: both;
-	clear: all;
+	/* clear: all; */
 }
 
 /*Center the main heading.*/
@@ -65,15 +65,20 @@ body{
 		 local("Almendra Display"),
 		 local("Almendra Display Regular"),
 		 local("AlmendraDisplay-Regular"),
-		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-		 url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
-		 url("Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
-		 url("Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype"),
-		 url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
-		 url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype"),
-		 url("https://fedor1113.github.io/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf") format("truetype"),
-		 url("https://fedor1113.github.io/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf") format("opentype");
-		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
+		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix")
+		 format("embedded-opentype"),
+		 url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff")
+		 format("woff"),*/
+		 url("Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf")
+		 	format("truetype"),
+		 url("Fonts/Almendra_Display/AlmendraDisplay-Regular.otf")
+		 	format("opentype"),
+		 url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.ttf")
+		 	format("truetype"),
+		 url("css/Fonts/Almendra_Display/AlmendraDisplay-Regular.otf")
+		 	format("opentype");
+		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay")
+		 	format("svg");
 	src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
 	font-weight: normal;
@@ -86,15 +91,16 @@ body{
 		 local("GidoleFont"),
 		 local("Gidole Regular"),
 		 local("Gidole-Regular"),
-		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix") format("embedded-opentype"),
-		 url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff") format("woff"),*/
+		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot?#iefix")
+		 	format("embedded-opentype"),
+		 url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.woff")
+		 	format("woff"),*/
 		 url("Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
 		 url("Fonts/GidoleFont/Gidole-Regular.otf") format("opentype"),
 		 url("css/Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
-		 url("css/Fonts/GidoleFont/Gidole-Regular.otf") format("opentype"),
-		 url("https://fedor1113.github.io/css/Fonts/GidoleFont/Gidole-Regular.ttf") format("truetype"),
-		 url("https://fedor1113.github.io/cssFonts/GidoleFont/Gidole-Regular.otf") format("opentype");
-		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay") format("svg");
+		 url("css/Fonts/GidoleFont/Gidole-Regular.otf") format("opentype");
+		 /*url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.svg#AlmendraDisplay")
+		 	format("svg");
 		 src: url("/css/Fonts/Almendra_Display/AlmendraDisplay-Regular.eot");*/
 
 	font-weight: normal;
@@ -103,21 +109,24 @@ body{
 
 @font-face{
 	font-family: 'Rothenburg-Decorative';
-	src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot'),
-		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot')
-		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot');
-	src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
-		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
-		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg'),
-		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
-		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
-		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg'),
-		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff') format('woff'),
-		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf') format('truetype'),
-		 url('https://fedor1113.github.io/css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular') format('svg');
+	/* src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot'); */
+	src: url('Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix')
+			format('embedded-opentype'),
+		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.woff')
+		 	format('woff'),
+		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf')
+		 	format('truetype'),
+		 url('Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular')
+		 	format('svg'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.eot?#iefix')
+		 	format('embedded-opentype'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.woff')
+		 	format('woff'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.ttf')
+		 	format('truetype'),
+		 url('css/Fonts/Rothenburg-Decorative/rothenbg-webfont.svg#webfontregular')
+		 	format('svg');
 	font-weight: normal;
 	font-style: normal;
 
@@ -126,8 +135,7 @@ body{
 @font-face{
 	font-family: "Snippet";
 	src: url('Fonts/Snippet/Snippet.otf') format('opentype'),
-		 url('css/Fonts/Snippet/Snippet.otf') format('opentype'),
-		 url('https://fedor1113.github.io/css/Fonts/Snippet/Snippet.otf') format('opentype');
+		 url('css/Fonts/Snippet/Snippet.otf') format('opentype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -324,10 +332,43 @@ section footer{
 	clear: none;
 }
 
-main p:not(:first-of-type):hover::before{
+/* main p:not(:first-of-type):hover::before{
 	content: "¶";
 	position: absolute;
 	left: 1em;
+} */
+
+p{
+	position: relative;
+}
+
+.paragraph_indicator{
+	background-color: rgba(245,222,179,0.1);
+	/* display: none; */
+	visibility: hidden;
+	display: block;
+	float: left;
+	position: absolute;
+	left: -1em;
+	top: 0;
+	width: 1.05em;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+main p:hover > .paragraph_indicator{
+	visibility: visible;
 }
 
 
@@ -447,11 +488,11 @@ main a{
 
 /*Basic transition for any change.*/
 *{
-	-webkit-transition: 0.8s linear;
-	-moz-transition: 0.8s linear;
-	-ms-transition: 0.8s linear;
-	-o-transition: 0.8s linear;
-	transition: 0.8s linear;
+	-webkit-transition: 1s linear;
+	-moz-transition: 1s linear;
+	-ms-transition: 1s linear;
+	-o-transition: 1s linear;
+	transition: 1s linear;
 }
 
 
