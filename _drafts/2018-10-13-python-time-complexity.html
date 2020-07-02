@@ -15,271 +15,271 @@ tags:
 ---
 <h1>{{ page.title }}</h1>
 <aside class="epigraph">
-    <blockquote cite="">
-        I do not fear the time <br />
-        For .... who knows where the time goes?
-    </blockquote>
-    -<cite style="font-style: normal">Denny, Sandy. &quot;Who Knows Where the Time Goes?&quot; <i>Unhalfbricking</i>, Island, 1968.</cite>
+	<blockquote cite="">
+		I do not fear the time <br />
+		For .... who knows where the time goes?
+	</blockquote>
+	-<cite style="font-style: normal">Denny, Sandy. &quot;Who Knows Where the Time Goes?&quot; <i>Unhalfbricking</i>, Island, 1968.</cite>
 </aside>
 <p>
-    So, obviously, there already exist some good resources to help you with the topic. I, however, wish to write here a better, nicer, more comprehensive and understandable all-in-one-place article about time complexity of common <b>Python 3.x</b> operations. After all, the official article could be more explicit and detailed in places - for ease of use&apos;s and obviousness&apos;s sake.
+	So, obviously, there already exist some good resources to help you with the topic. I, however, wish to write here a better, nicer, more comprehensive and understandable all-in-one-place article about time complexity of common <b>Python 3.x</b> operations. After all, the official article could be more explicit and detailed in places - for ease of use&apos;s and obviousness&apos;s sake.
 </p>
 <figure class="visible_scroll">
 <figcaption>
-    Lists operations
+	Lists operations
 </figcaption>
 <table class="table visible_scroll">
-    <thead>
-        <tr>
-            <th>
-                Operation
-            </th>
-            <th>
-                Code
-            </th>
-            <th>
-                Big Oh (worst case)
-            </th>
-            <th>
-                Extra info of note
-            </th>
-        </tr>
-    </thead>
-    <tr>
-        <td>
-            Getting an element by index
-        </td>
-        <td>
-            {% highlight python %}
+	<thead>
+		<tr>
+			<th>
+				Operation
+			</th>
+			<th>
+				Code
+			</th>
+			<th>
+				Big Oh (worst case)
+			</th>
+			<th>
+				Extra info of note
+			</th>
+		</tr>
+	</thead>
+	<tr>
+		<td>
+			Getting an element by index
+		</td>
+		<td>
+			{% highlight python %}
 lst[i]
-            {% endhighlight %}
-        </td>
-        <td>
-            O(1)
-        </td>
-        <td>
-            It <em>is</em> this data struct. most frequent func., so naturally it is constant time
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Setting an element at a given index to a particular value
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(1)
+		</td>
+		<td>
+			It <em>is</em> this data struct. most frequent func., so naturally it is constant time
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Setting an element at a given index to a particular value
+		</td>
+		<td>
+			{% highlight python %}
 lst[i] = element
-            {% endhighlight %}
-        </td>
-        <td>
-            O(1)
-        </td>
-        <td>
-            Pretty straightforward
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Taking a slice
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(1)
+		</td>
+		<td>
+			Pretty straightforward
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Taking a slice
+		</td>
+		<td>
+			{% highlight python %}
 lst[a:b]
-            {% endhighlight %}
-        </td>
-        <td>
-            O(b-a) (can actually reach O(N+(b-a)))
-        </td>
-        <td>
-            For the linear case see &quot;Appending an element to a list&quot; - it is basically the same principle
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Inserting a value into a list
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(b-a) (can actually reach O(N+(b-a)))
+		</td>
+		<td>
+			For the linear case see &quot;Appending an element to a list&quot; - it is basically the same principle
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Inserting a value into a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.insert(i, element)
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N)
-        </td>
-        <td>
-            Guess when it is at its worst... Yeah, inserting in the beginning is usually not a bright idea
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Popping an item from a list
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N)
+		</td>
+		<td>
+			Guess when it is at its worst... Yeah, inserting in the beginning is usually not a bright idea
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Popping an item from a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.pop(k)
 # for an element
 # with index k
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N-k)
-        </td>
-        <td>
-            Notice how lst.pop() (equivalent to lst.pop(-1)) is O(1), so Python lists actually e.g. double as stacks!
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Clearing a list
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N-k)
+		</td>
+		<td>
+			Notice how lst.pop() (equivalent to lst.pop(-1)) is O(1), so Python lists actually e.g. double as stacks!
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Clearing a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.clear()
-            {% endhighlight %}
-        </td>
-        <td>
-            O(1)
-        </td>
-        <td>
-            Deleting values is not hard
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Constructing a list from an iterable
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(1)
+		</td>
+		<td>
+			Deleting values is not hard
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Constructing a list from an iterable
+		</td>
+		<td>
+			{% highlight python %}
 list(iterable)
 # for iterable
 # of length N_i
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N<sub>i</sub>)
-        </td>
-        <td>
-            You just go over all of the values.
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Copying a list
-        </td>
-        <td>
-            <code>
-                {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N<sub>i</sub>)
+		</td>
+		<td>
+			You just go over all of the values.
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Copying a list
+		</td>
+		<td>
+			<code>
+				{% highlight python %}
 lst2 = lst1.copy()
-                {% endhighlight %}
-            </code>
-        </td>
-        <td>
-            O(N<sub>1</sub>)
-        </td>
-        <td>
-            Allocating memory...
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Extending a list
-        </td>
-        <td>
-            {% highlight python %}
+				{% endhighlight %}
+			</code>
+		</td>
+		<td>
+			O(N<sub>1</sub>)
+		</td>
+		<td>
+			Allocating memory...
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Extending a list
+		</td>
+		<td>
+			{% highlight python %}
 lst1.extend(lst2)
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N<sub>2</sub>) (or much worse in rare cases - O(N<sub>1</sub>+N<sub>2</sub>))
-        </td>
-        <td>
-            Depends only on the length of the second list (that is, if it is not <em>way</em> bigger than the original)
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Appending an element to a list
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N<sub>2</sub>) (or much worse in rare cases - O(N<sub>1</sub>+N<sub>2</sub>))
+		</td>
+		<td>
+			Depends only on the length of the second list (that is, if it is not <em>way</em> bigger than the original)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Appending an element to a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.append(element)
-            {% endhighlight %}
-        </td>
-        <td>
-            O(1) (sometimes O(len(element)))
-        </td>
-        <td>
-            <strong>O(1) - for sequences of length less or equal to that of the original list. Objects that can be fit into memory already allocated for the list.</strong><br />
-            Other cases are of cource linear...
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Equality check
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(1) (sometimes O(len(element)))
+		</td>
+		<td>
+			<strong>O(1) - for sequences of length less or equal to that of the original list. Objects that can be fit into memory already allocated for the list.</strong><br />
+			Other cases are of cource linear...
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Equality check
+		</td>
+		<td>
+			{% highlight python %}
 lst1 == lst2
 # or lst1 != lst2
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N)
-        </td>
-        <td>
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N)
+		</td>
+		<td>
 
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Reversing a list
-        </td>
-        <td>
-            {% highlight python %}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Reversing a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.reverse()
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N)
-        </td>
-        <td>
-            Quite obvious again
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Iterating over a list
-        </td>
-        <td>
-            {% highlight python %}
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N)
+		</td>
+		<td>
+			Quite obvious again
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Iterating over a list
+		</td>
+		<td>
+			{% highlight python %}
 for item in lst:
-    # doing smth
-    # that takes
-    # constant time
-    pass
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N)
-        </td>
-        <td>
-            Yeah, well... :)
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Sorting a list
-        </td>
-        <td>
-            {% highlight python %}
+	# doing smth
+	# that takes
+	# constant time
+	pass
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N)
+		</td>
+		<td>
+			Yeah, well... :)
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Sorting a list
+		</td>
+		<td>
+			{% highlight python %}
 lst.sort()
-            {% endhighlight %}
-        </td>
-        <td>
-            O(N Log N)
-        </td>
-        <td>
-            So you probably know that it is just a <em>mite</em> more efficient than <i>timsort</i> implementation in the sorted() object - by virtue of mutating the original
-        </td>
-    </tr>
+			{% endhighlight %}
+		</td>
+		<td>
+			O(N Log N)
+		</td>
+		<td>
+			So you probably know that it is just a <em>mite</em> more efficient than <i>timsort</i> implementation in the sorted() object - by virtue of mutating the original
+		</td>
+	</tr>
 </table>
 </figure>
