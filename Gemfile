@@ -33,4 +33,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem "kramdown", "2.3.1"
 gem "rouge", "3.26.0"
 
-gem "webrick", "~> 1.7.0"
+gem "webrick", "~> 1.8.2"
